@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "Objective Bold";
+  src: url('../fonts/Objective-Bold.woff2');
+}
+
+@font-face {
+  font-family: "Objective Medium";
+  src: url('../fonts/Objective-Medium.woff2');
+}
+
+@font-face {
+  font-family: "Objective Regular";
+  src: url('../fonts/Objective-Regular.woff2');
+}
+  
+:root{
+  --primary-color: #b4b3af;
+  --font-color-white: #FFF;
+  --font-color-dark: #212529;
+  --font-color-active: #F5BA4B;
+  --font-family-bold: 'Objective Bold';
+  --font-family-medium: 'Objective Medium';
+  --font-family-regular: 'Objective Regular';
+  --success-color: #C2E8CE;
+  --danger-color: #E5C0C0;
+  --warning-color: #E2E2BE;
+  --info-color: #C0C8E5;
+  --break-point-xs: 576px;
+  --break-point-sm: 768px;
+  --break-point-md: 992px;
+  --break-point-lg: 1200px;
+  --break-point-xl: 1400px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: var(--font-family-regular);
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------ HEADER -------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+.header{
+  background-image: linear-gradient(
+      /* to right,  */
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+     ),  
+     url('../img/cover1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: var(--font-family-bold);
+  text-decoration: none;
+  position: fixed;
+  height: 80px;
+  top: 0;
+  left: 0;
+}
+
+.logo > img{
+  height: 60px;
+  padding-left: 5vw;
+}
+
+.nav-menu{
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu-item{
+  font-size: 1em;
+  margin: 0 30px;
+}
+
+.nav-menu-link:hover{
+  color: var(--font-color-active);
+  border-bottom: 1px solid var(--font-color-active);
+  transition: .3s;
+}
+
+.nav-menu-link{
+  color: var(--font-color-white);
+  text-decoration: none;
+}
+
+.menu-hamburger{
+  background: none;
+  border: none;
+  padding: 0 20px;
+  display: none;
+}
+
+.menu-img{
+  /* background-image: url('../img/menu.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
+  /* display: inline-block; */
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+  fill: var(--font-color-white)!important;
+}
+
+.iam{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--font-color-white);
+}
+
+.my-photo{
+  background-color: var(--font-color-active);
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.name-job{
+  margin: 10px;
+  text-align: center;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------- MAIN --------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+main{
+  padding: 20px 20px 0;
+}
+
+
+
+@media (max-width: 768px) {
+  /* ---------------------------------------------------------------------------------- */
+  /* ------------------------------------ HEADER -------------------------------------- */
+  /* ---------------------------------------------------------------------------------- */
+  .nav{
+    height: 60px;
+    justify-content: space-between;
+    transition: .3s .3s;
+  }
+
+  .logo > img{
+    height: 40px;
+    padding-left: 5vw;
+  }
+  
+  .nav-menu{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    top: -100%;
+    transition: top .3s;
+  }
+  
+  .nav-menu-item{
+    font-size: 1em;
+    margin: 20px;
+  }
+ 
+  .nav-menu-link{
+    color: var(--font-color-dark);
+    text-decoration: none;
+  }
+
+  .nav-menu-link:hover{
+    color: var(--font-color-active);
+    border-bottom: 1px solid var(--font-color-active);
+    transition: .3s;
+  }
+
+  .menu-hamburger{
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu--active{
+    top: 60px;
+    transition: .3s .2s;
+  }
+  
+  .nav--light{
+    background: #fff;
+    transition: .3s;
+  }
+
+  .menu-img--light{
+    fill: var(--font-color-dark)!important;
+  }
+
+  /* ---------------------------------------------------------------------------------- */
+  /* ------------------------------------- MAIN --------------------------------------- */
+  /* ---------------------------------------------------------------------------------- */
+}
