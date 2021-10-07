@@ -17,3 +17,14 @@ links.forEach( link => {
         imgHamburger.classList.toggle('menu-img--light')
     });
 })
+
+window.addEventListener('scroll', () => {
+    if(window.pageYOffset >= screen.height - 100){
+        console.log('oscurecer')
+        nav.classList.add('nav--change')
+    }else{
+        console.log('transparente')
+        nav.classList.remove('nav--change')
+    }
+    
+})
