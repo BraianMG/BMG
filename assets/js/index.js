@@ -5,6 +5,7 @@ const links = document.querySelectorAll('.nav-menu-link')
 const imgHamburger = document.querySelector('.menu-img')
 const blocks = document.querySelectorAll('.block')
 const titlesBlock = document.querySelectorAll('.title-block')
+const arrows = document.querySelectorAll('.arrow')
 
 // NAVBAR
 navHamburger.addEventListener('click', () => {
@@ -23,10 +24,8 @@ links.forEach( link => {
 
 window.addEventListener('scroll', () => {
     if(window.pageYOffset >= screen.height - 100){
-        console.log('oscurecer')
         nav.classList.add('nav--change')
     }else{
-        console.log('transparente')
         nav.classList.remove('nav--change')
     }  
 })
@@ -38,9 +37,11 @@ titlesBlock.forEach( (titleBlock,i) => {
         
         blocks.forEach( (block,j) => {
             if(i!==j){
-                blocks[j].classList.remove('active')
+                blocks[j].classList.remove('block--active')
+                arrows[j].classList.remove('arrow--active')
             }
         })
-        blocks[i].classList.toggle('active')
+        blocks[i].classList.toggle('block--active')
+        arrows[i].classList.toggle('arrow--active')
     })
 } )

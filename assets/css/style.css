@@ -245,6 +245,11 @@ main{
   /* width: 2em; */
   width: 20%;
   max-width: 2em;
+  transition: .5s;  
+}
+
+.arrow--active{
+  transform: rotate(-180deg);
 }
 
 .percent{
@@ -255,7 +260,7 @@ main{
 
 .bar{
   display: block;
-  height: 7px;
+  height: 5px;
   background: rgba(245, 186, 75, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.3);
   /* border-radius: 10px; */
@@ -330,9 +335,9 @@ main{
   /* background-color: orange; */
 }
 
-.accordion .block.active .content-block{
-  /* height: 10em; */
-  height: min-content;
+.accordion .block.block--active .content-block{
+  height: 10.5em;
+  /* height: min-content; */
 }
 
 
