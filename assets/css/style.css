@@ -211,6 +211,130 @@ main{
   flex-direction: column;
 }
 
+.p{
+  text-align: center;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+
+.title-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-img{
+  /* width: 2em; */
+  width: 20%;
+  max-width: 2em;
+}
+
+.title-block > h4{
+  font-size: 1em;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.arrow{
+  /* width: 2em; */
+  width: 20%;
+  max-width: 2em;
+}
+
+.percent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar{
+  display: block;
+  height: 7px;
+  background: rgba(245, 186, 75, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  /* border-radius: 10px; */
+  overflow: hidden;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+}
+
+.bar span{
+  height: 20px;
+  float: left;
+  background: var(--font-color-active)
+}
+
+.p90{
+  width: 90%;
+}
+
+.p70{
+  width: 70%;
+}
+
+.p75{
+  width: 75%;
+}
+
+.p50{
+  width: 50%;
+}
+
+.p80{
+  width: 80%;
+}
+
+.p60{
+  width: 60%;
+}
+
+.p85{
+  width: 85%;
+}
+
+.p100{
+  width: 100%;
+}
+
+
+
+.accordion{
+  width: 100%;
+  max-width: 120em;
+  /* padding: 2em; */
+  /* background-color: lightblue; */
+}
+
+.accordion .block{
+  /* margin: 0 0 1em; */
+  /* padding: 1em; */
+  /* background-color: red; */
+}
+
+.accordion .title-block{
+  /* margin: 0 0 1em; */
+  padding: 1em;
+  /* background-color: lime; */
+}
+
+.accordion .content-block{
+  height: 0;
+  padding: 0em;
+  overflow: hidden;
+  transition: all .5s ease;
+  /* background-color: orange; */
+}
+
+.accordion .block.active .content-block{
+  /* height: 10em; */
+  height: min-content;
+}
+
 
 
 
