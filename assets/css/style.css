@@ -51,6 +51,10 @@ li{
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* SCROLL PERSONALIZADO */
 body::-webkit-scrollbar{
   width: 10px;
@@ -181,9 +185,10 @@ main{
   justify-content: center;
 }
 
-.about-me{
+/* ------------------------------------ ABOUT ME -------------------------------------- */
+/* .about-me{
 
-}
+} */
 
 .section.about-me > img {
   width: 90vw;
@@ -215,6 +220,7 @@ main{
   text-align: center;
 }
 
+/* ------------------------------------ SKILLS -------------------------------------- */
 .skills{
   display: flex;
   flex-direction: column;
@@ -306,8 +312,6 @@ main{
   width: 100%;
 }
 
-
-
 .accordion{
   width: 100%;
   max-width: 120em;
@@ -315,11 +319,11 @@ main{
   /* background-color: lightblue; */
 }
 
-.accordion .block{
-  /* margin: 0 0 1em; */
-  /* padding: 1em; */
-  /* background-color: red; */
-}
+/* .accordion .block{
+  margin: 0 0 1em;
+  padding: 1em;
+  background-color: red;
+} */
 
 .accordion .title-block{
   /* margin: 0 0 1em; */
@@ -342,6 +346,96 @@ main{
 
 
 
+
+
+
+/* ------------------------------------ CONTACT -------------------------------------- */
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.contact-information{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-datas{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.contact-img{
+  /* width: 20%; */
+  width: 30px;
+}
+
+.contact-data{
+  margin-left: 20px;
+}
+
+.contact-data > p{
+  font-size: .75em;
+  color: var(--primary-color);
+  margin-top: 7px;
+}
+
+.contact-form{
+  margin-top: 20px;
+}
+
+/* .form-inputs{
+
+}
+
+.inputs-name-email{
+
+} */
+
+.inputs-content{
+  background-color: rgba(245, 186, 75, 0.25);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input-label{
+  font-family: var(--font-family-regular);
+  font-size: .75em;
+  margin-bottom: 1em;
+}
+
+.input-content{
+  width: 100%;
+  background-color: rgba(245, 186, 75, 0);
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-family: var(--font-family-regular);
+  padding: .5em .5em .5em 0;
+  color: #706f6d;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--font-color-active);
+  color: #fff;
+  border-radius: 10px;
+  height: 60px;
+  max-width: 200px;
+  margin-top: 20px;
+  font-family: var(--font-family-bold);
+}
+
+.button-img{
+  margin-left: 10px;
+  width: 2em;
+}
 
 
 @media (max-width: 768px) {
