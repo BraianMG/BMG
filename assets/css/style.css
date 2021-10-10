@@ -194,7 +194,14 @@ main{
   padding-top: 60px;
 }
 
-.section.about-me > img {
+/* .about-me-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+} */
+
+.section.about-me > .about-me-texts > img {
   width: 90vw;
   max-width: 500px;
   padding: 20px 20px;
@@ -223,6 +230,43 @@ main{
 
 .p{
   text-align: center;
+}
+
+.statistics-cv {
+  margin-top: 10px;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.items {
+  padding: 0 10px;
+}
+
+.items > h4 {
+  font-family: var(--font-family-bold);
+  text-align: center;
+  padding: 5px 0;
+}
+
+.items > p {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: .75rem;
+}
+
+.button-download-cv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.download {
+  width: 100%;
 }
 
 /* ------------------------------------ SKILLS -------------------------------------- */
@@ -672,11 +716,13 @@ footer{
 }
 
 @media (min-width: 1024px) {
-  .about-me {
-    flex-direction: row;
-  }
+  .about-me-texts {
+  display: flex;
+  flex-direction: row;
 
-  .section.about-me > img {
+}
+
+  .section.about-me > .about-me-texts > img {
     max-width: 400px;
   }
 
