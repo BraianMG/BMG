@@ -7,6 +7,7 @@ const imgHamburger = document.querySelector('.menu-img')
 const blocks = document.querySelectorAll('.block')
 const titlesBlock = document.querySelectorAll('.title-block')
 const arrows = document.querySelectorAll('.arrow')
+const scrollup = document.querySelector('.scrollup')
 
 // NAVBAR
 navHamburger.addEventListener('click', () => {
@@ -32,8 +33,10 @@ links.forEach( link => {
 window.addEventListener('scroll', () => {
     if(window.pageYOffset >= screen.height - 100){
         nav.classList.add('nav--change')
+        scrollup.classList.add('scrollup--show')
     }else{
         nav.classList.remove('nav--change')
+        scrollup.classList.remove('scrollup--show')
     }  
 })
 
