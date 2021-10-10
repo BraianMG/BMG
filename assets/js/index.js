@@ -1,6 +1,7 @@
 const navHamburger = document.querySelector('.menu-hamburger')
 const navMenu = document.querySelector('.nav-menu')
 const nav = document.querySelector('.nav')
+const logo = document.querySelector('.logo')
 const links = document.querySelectorAll('.nav-menu-link')
 const imgHamburger = document.querySelector('.menu-img')
 const blocks = document.querySelectorAll('.block')
@@ -12,6 +13,12 @@ navHamburger.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu--active')
     nav.classList.toggle('nav--light')
     imgHamburger.classList.toggle('menu-img--light')
+});
+
+logo.addEventListener('click', () => {
+    navMenu.classList.remove('nav-menu--active')
+    nav.classList.remove('nav--light')
+    imgHamburger.classList.remove('menu-img--light')
 });
 
 links.forEach( link => {

@@ -330,9 +330,12 @@ main{
   background-color: red;
 } */
 
+
+
 .accordion .title-block{
   /* margin: 0 0 1em; */
   padding: 1em;
+  cursor: pointer;
   /* background-color: lime; */
 }
 
