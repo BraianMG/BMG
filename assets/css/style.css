@@ -398,13 +398,100 @@ main{
 
 
 /* ------------------------------------ QUALIFICATIONS -------------------------------------- */
+.carrer-studies {
 
+}
+
+.qualifications-container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.qualifications-tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2em 0;
+}
+
+.qualifications-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family-medium);
+  cursor: pointer;
+  width: 50%;
+  font-size: 1.2em;
+}
+
+.qualifications-button:hover {
+  color: var(--font-color-active);
+}
 
 .tabs-img {
   width: 31px;
 }
 
+.qualification-sections {
 
+}
+
+.qualifcation-content {
+  display: none;
+}
+
+.qualification-data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification-title {
+  margin-bottom: .9em;
+}
+
+.qualification-subtitle {
+  color: var(--primary-color);
+  font-size: .8em;
+  margin-bottom: .5em;
+}
+
+.qualification-calendar {
+  color: var(--primary-color);
+  font-size: .9em;
+}
+
+.calendar-img {
+  height: 1em;
+}
+
+.qualification-circle {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--font-color-active);
+  border-radius: 50%;
+}
+
+.qualification-line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--font-color-active);
+  transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+  display: none;
+}
+
+.qualification--show [data-content] {
+  display: block;
+}
+
+.qualifications-button.qualification--show {
+  color: var(--font-color-active);
+}
 
 
 /* ------------------------------------ CONTACT -------------------------------------- */

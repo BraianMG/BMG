@@ -8,6 +8,8 @@ const blocks = document.querySelectorAll('.block')
 const titlesBlock = document.querySelectorAll('.title-block')
 const arrows = document.querySelectorAll('.arrow')
 const scrollup = document.querySelector('.scrollup')
+const tabs = document.querySelectorAll('[data-target]')
+const tabContents = document.querySelectorAll('[data-content]')
 
 // NAVBAR
 navHamburger.addEventListener('click', () => {
@@ -55,3 +57,20 @@ titlesBlock.forEach( (titleBlock,i) => {
         arrows[i].classList.toggle('arrow--active')
     })
 } )
+
+// QUALIFICATIONS
+tabs.forEach( tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target)
+        
+        tabContents.forEach( tabContent => {
+            tabContent.classList.remove('qualification--show')
+        })
+        target.classList.add('qualification--show')
+
+        tabs.forEach( tab => {
+            tab.classList.remove('qualification--show')
+        })
+        tab.classList.add('qualification--show')
+    })
+})
