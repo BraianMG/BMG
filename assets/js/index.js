@@ -32,6 +32,7 @@ links.forEach( link => {
     });
 })
 
+// NAV Y SCROLLUP
 window.addEventListener('scroll', () => {
     if(window.pageYOffset >= screen.height - 100){
         nav.classList.add('nav--change')

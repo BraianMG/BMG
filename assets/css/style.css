@@ -166,6 +166,7 @@ body::-webkit-scrollbar-thumb{
 .nav--change{
   transition: .3s;
   background-color: #21252980;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -263,12 +264,13 @@ main{
 .button-download-cv {
   display: flex;
   justify-content: center;
-  width: 100%;
+  
 }
 
 .download {
   width: 100%;
 }
+
 
 /* ------------------------------------ SKILLS -------------------------------------- */
 .skills{
@@ -278,6 +280,17 @@ main{
   margin: 20px 0;
 }
 
+.block {
+  padding: 3px 3px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s;
+}
+
+.block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
 
 .title-block{
   display: flex;
@@ -448,6 +461,18 @@ main{
   column-gap: 1.5rem;
 }
 
+.data-data {
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  transition: all 0.25s;
+}
+.data-data:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  /* background-color: var(--font-color-active); */
+} 
+
 .qualification-title {
   margin-bottom: .9em;
 }
@@ -521,13 +546,14 @@ main{
 .card-project:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-  background-color: var(--font-color-active);
+  /* background-color: var(--font-color-active); */
 }
 
 .project-img {
   width: 330px;
   height: 220px;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 .card-project p {
@@ -536,6 +562,19 @@ main{
 
 .card-project a {
   text-decoration: none;
+}
+
+/* .projects-links {
+
+} */
+
+.project-i {
+  font-size: 2em;
+  color: var(--primary-color);
+}
+
+.project-i:hover {
+  color: var(--font-color-active)
 }
 
 /* ------------------------------------ CONTACT -------------------------------------- */
@@ -616,7 +655,17 @@ main{
   max-width: 200px;
   margin-top: 20px;
   font-family: var(--font-family-bold);
+
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s;
 }
+
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: var(--font-color-active);
+} 
 
 .button-img{
   margin-left: 10px;
