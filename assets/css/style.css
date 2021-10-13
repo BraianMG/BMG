@@ -413,6 +413,7 @@ main{
   display: flex;
   justify-content: space-evenly;
   margin: 2em 0;
+  min-width: 300px;
 }
 
 .qualifications-button {
@@ -437,9 +438,9 @@ main{
 
 } */
 
-.qualifcation-content {
-  display: none;
-}
+/* .qualifcation-content {
+  
+} */
 
 .qualification-data {
   display: grid;
@@ -482,11 +483,11 @@ main{
   transform: translate(6px, -7px);
 }
 
-.qualification [data-content] {
+.section [data-content] {
   display: none;
 }
 
-.qualification--show [data-content] {
+.qualification--show[data-content] {
   display: block;
 }
 
@@ -680,10 +681,10 @@ footer{
   height: 20px;
 }
 
+  /* ---------------------------------------------------------------------------------- */
+  /* ------------------------------------ MEDIA QUERYS -------------------------------------- */
+  /* ---------------------------------------------------------------------------------- */
 @media (max-width: 768px) {
-  /* ---------------------------------------------------------------------------------- */
-  /* ------------------------------------ HEADER -------------------------------------- */
-  /* ---------------------------------------------------------------------------------- */
   .nav{
     height: 60px;
     justify-content: space-between;
@@ -743,10 +744,6 @@ footer{
   .menu-img--light{
     fill: var(--font-color-dark)!important;
   }
-
-  /* ---------------------------------------------------------------------------------- */
-  /* ------------------------------------- MAIN --------------------------------------- */
-  /* ---------------------------------------------------------------------------------- */
 }
 
 @media (min-width: 425px) {
