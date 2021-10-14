@@ -51,10 +51,10 @@
 
     <main>
         <section class="section about-me" id="about-me">
+            <h3 class="h3">About Me</h3>
             <div class="about-me-texts">
                 <img src="./assets/img/about-me.svg" alt="About Me">
                 <div class="content-about-me">
-                    <h3 class="h3">About Me</h3>
                     <ul>
                         <li>
                             Extremely motivated to constantly develop my skills and grow professionally as a Full-Stack Developer in the Object Oriented and Functional programming paradigms.
@@ -478,29 +478,39 @@
                         <div class="inputs-name-email">
                             <div class="inputs-content">
                                 <label for="" class="input-label">Name</label>    
-                                <input type="text" class="input-content">
+                                <input type="text" id="name" name="name" class="input-content">
                             </div>
                             <div class="inputs-content">
                                 <label for="" class="input-label">Email</label>    
-                                <input type="email" class="input-content">
+                                <input type="email" id="email" name="email"  class="input-content">
                             </div>
                         </div>
                         <div class="inputs-content">
                             <label for="" class="input-label">Project</label>    
-                            <input type="text" class="input-content">
+                            <input type="text" id="project" name="project"  class="input-content">
                         </div>
                         <div class="inputs-content">
                             <label for="" class="input-label">Message</label>    
-                            <textarea name="" id="" cols="0" rows="7" class="input-content"></textarea>
+                            <textarea id="message" name="message"  cols="0" rows="7" class="input-content"></textarea>
                         </div>
                         <div>
-                            <a href="#" class="button">
+                            <button type="submit" class="button">
                                 Send Message
                                 <img src="./assets/img/send.svg" alt="Send" class="button-img">
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </form>
+                <div class="form-message success hidden">
+                    <i class="uil uil-check-circle"></i>
+                    <h4>Form sent successfully!</h4>
+                    <p>I will answer promptly</p>
+                </div>
+                <div class="form-message warning hidden">
+                    <i class="uil uil-exclamation-circle"></i>
+                    <h4>Oops, an error occurred!</h4>
+                    <p>Try again later</p>
+                </div>    
             </div>
             
         </section>
