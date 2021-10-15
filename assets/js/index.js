@@ -51,7 +51,7 @@ links.forEach( link => {
 
 // NAV Y SCROLLUP
 window.addEventListener('scroll', () => {
-    if(window.pageYOffset >= screen.height - 100){
+    if(window.pageYOffset >= screen.height*2/3){
         nav.classList.add('nav--change')
         scrollup.classList.add('scrollup--show')
     }else{
