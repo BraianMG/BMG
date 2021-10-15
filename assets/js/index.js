@@ -22,6 +22,10 @@ const success = document.querySelector('.form-message.success')
 const warning = document.querySelector('.form-message.warning')
 const notice = document.querySelector('.notice')
 const loader = document.querySelector('.loader')
+const expressions = {
+    name: /^[a-zA-ZÀ-ÿ\s]{1,50}$/, // Letters and spaces, may have accents
+    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, // Standard email format
+}
 // CONTACT ME (EFFECTS)
 const inputsArea = document.querySelectorAll('.inputs-content')
 const inputs = document.querySelectorAll('.input-content')
@@ -101,8 +105,24 @@ form.addEventListener('submit', async(e) => {
     loader.classList.toggle('hidden')
     submitButton.classList.toggle('hidden')
 
+    const name_validation = expressions.name.test(form.name.value)
+    const email_validation = expressions.email.test(form.email.value)
+
     // VALIDATION
     if (form.name.value==='' || form.email.value==='' || form.project.value==='' || form.message.value===''){
+        notice.innerHTML="All fields are required"
+        loader.classList.toggle('hidden')
+        submitButton.classList.toggle('hidden')
+        notice.classList.remove('hidden')
+
+    }else if (!name_validation){
+        notice.innerHTML="Invalid name"
+        loader.classList.toggle('hidden')
+        submitButton.classList.toggle('hidden')
+        notice.classList.remove('hidden')
+    
+    }else if (!email_validation){
+        notice.innerHTML="Invalid email"
         loader.classList.toggle('hidden')
         submitButton.classList.toggle('hidden')
         notice.classList.remove('hidden')
