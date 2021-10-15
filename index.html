@@ -8,6 +8,8 @@
 
     <!-- UNICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Custom JS -->
@@ -391,7 +393,7 @@
                     <h4>BILAN Online Financial Statements</h4>
                     <p>Platform for accountants, to obtain Financial Statements</p>
                     <div class="project-links">
-                        <a href="http://190.15.194.41/BILAN" target="_blank" class="project-i">
+                        <a href="http://aplicacion.bilan.com.ar" target="_blank" class="project-i">
                             <i class="uil uil-link-h"></i>
                         </a>
                         <a href="https://www.youtube.com/watch?v=ci8A6LjAby4" target="_blank" class="project-i">
@@ -493,11 +495,17 @@
                             <label for="" class="input-label">Message</label>    
                             <textarea id="message" name="message"  cols="0" rows="7" class="input-content"></textarea>
                         </div>
-                        <div>
+                        <div class="submit-spiner">
                             <button type="submit" class="button">
                                 Send Message
                                 <img src="./assets/img/send.svg" alt="Send" class="button-img">
                             </button>
+                            <div class="loader hidden">
+                                <i class='bx bx-loader-alt bx-spin loader-i' style='color:#f5ba4b'></i>
+                            </div>
+                            <div class="notice hidden">
+                                Todos los campos son requeridos
+                            </div>
                         </div>
                     </div>
                 </form>
