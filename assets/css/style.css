@@ -298,13 +298,13 @@ main{
 
 .content-block img {
   margin: 10px 0;
-  filter: grayscale(100%);
-  transition: all .3s ease;
+  /* filter: grayscale(100%); */
+  /* transition: all .3s ease; */
 }
 
 .content-block img:hover {
   margin: 10px 0;
-  filter: grayscale(0%);
+  /* filter: grayscale(0%); */
 }
 
 .content-block i {
