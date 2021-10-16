@@ -291,6 +291,31 @@ main{
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
+.content-block {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content-block img {
+  margin: 10px 0;
+  filter: grayscale(100%);
+  transition: all .3s ease;
+}
+
+.content-block img:hover {
+  margin: 10px 0;
+  filter: grayscale(0%);
+}
+
+.content-block i {
+  color: var(--primary-color);
+  font-size: 4em;
+}
+
+.content-block i:hover {
+  color: var(--font-color-active);
+}
+
 .title-block{
   display: flex;
   justify-content: space-between;
@@ -320,60 +345,6 @@ main{
   transform: rotate(-180deg);
 }
 
-.percent{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.bar{
-  display: block;
-  height: 5px;
-  background: rgba(245, 186, 75, 0.25);
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  /* border-radius: 10px; */
-  overflow: hidden;
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
-}
-
-.bar span{
-  height: 20px;
-  float: left;
-  background: var(--font-color-active)
-}
-
-.p90{
-  width: 90%;
-}
-
-.p70{
-  width: 70%;
-}
-
-.p75{
-  width: 75%;
-}
-
-.p50{
-  width: 50%;
-}
-
-.p80{
-  width: 80%;
-}
-
-.p60{
-  width: 60%;
-}
-
-.p85{
-  width: 85%;
-}
-
-.p100{
-  width: 100%;
-}
-
 .accordion{
   width: 100%;
   max-width: 30em;
@@ -398,14 +369,14 @@ main{
 
 .accordion .content-block{
   height: 0;
-  padding: 0em;
+  padding: 0;
   overflow: hidden;
   transition: all .5s ease;
   /* background-color: orange; */
 }
 
 .accordion .block.block--active .content-block{
-  height: 10.5em;
+  height: 5em;
   /* height: min-content; */
 }
 
@@ -971,8 +942,8 @@ footer{
 
 @media (min-width: 1024px) {
   .about-me-texts {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .section.about-me > .about-me-texts > img {
