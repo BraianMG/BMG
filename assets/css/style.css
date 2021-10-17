@@ -99,6 +99,10 @@ body::-webkit-scrollbar-thumb{
   z-index: 15;
 }
 
+.logo {
+  z-index: 20;
+}
+
 .logo > img{
   height: 40px; /* 60px para .sgv*/
   padding-left: 5vw;
@@ -130,6 +134,7 @@ body::-webkit-scrollbar-thumb{
   border: none;
   padding: 0 20px;
   display: none;
+  z-index: 20;
 }
 
 .menu-img{
