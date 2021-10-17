@@ -96,17 +96,22 @@ body::-webkit-scrollbar-thumb{
   height: 80px;
   top: 0;
   left: 0;
-  z-index: 15;
+}
+
+.logo {
+  z-index: 20;
 }
 
 .logo > img{
   height: 40px; /* 60px para .sgv*/
   padding-left: 5vw;
+  
 }
 
 .nav-menu{
   display: flex;
   list-style: none;
+  z-index: 15;
 }
 
 .nav-menu-item{
@@ -130,6 +135,7 @@ body::-webkit-scrollbar-thumb{
   border: none;
   padding: 0 20px;
   display: none;
+  z-index: 20;
 }
 
 .menu-img{
