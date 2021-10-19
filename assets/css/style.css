@@ -12,6 +12,11 @@
   font-family: "Objective Regular";
   src: url('../fonts/Objective-Regular.woff2');
 }
+
+@font-face {
+  font-family: "SF Sport Night";
+  src: url('../fonts/SFSportsNightNSAlternate.ttf');
+}
   
 :root{
   --primary-color: #b4b3af;
@@ -21,6 +26,7 @@
   --font-family-bold: 'Objective Bold';
   --font-family-medium: 'Objective Medium';
   --font-family-regular: 'Objective Regular';
+  --font-family-special: 'SF Sport Night';
   --success-color: #C2E8CE;
   --danger-color: #E5C0C0;
   --warning-color: #E2E2BE;
@@ -156,6 +162,12 @@ body::-webkit-scrollbar-thumb{
   flex-direction: column;
   align-items: center;
   color: var(--font-color-white);
+  text-shadow: 0px 0px 3px black;
+}
+
+.iam > h1 {
+  font-style: italic;
+  
 }
 
 .my-photo{
@@ -163,6 +175,15 @@ body::-webkit-scrollbar-thumb{
   border-radius: 100%;
   width: 200px;
   height: 200px;
+  
+}
+
+.initials {
+  /* font-family: var(--font-family-bold); */
+  font-family: var(--font-family-special);
+  color: var(--font-color-active);
+  font-size: 1.3em;
+  
 }
 
 .name-job{
