@@ -167,7 +167,6 @@ body::-webkit-scrollbar-thumb{
 
 .iam > h1 {
   font-style: italic;
-  
 }
 
 .my-photo{
@@ -175,15 +174,13 @@ body::-webkit-scrollbar-thumb{
   border-radius: 100%;
   width: 200px;
   height: 200px;
-  
 }
 
 .initials {
-  /* font-family: var(--font-family-bold); */
   font-family: var(--font-family-special);
   color: var(--font-color-active);
   font-size: 1.3em;
-  
+  padding: 0 2px;
 }
 
 .name-job{
