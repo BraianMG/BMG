@@ -99,7 +99,7 @@ body::-webkit-scrollbar-thumb{
   font-family: var(--font-family-bold);
   text-decoration: none;
   position: fixed;
-  height: 80px;
+  height: 60px;
   top: 0;
   left: 0;
   z-index: 15;

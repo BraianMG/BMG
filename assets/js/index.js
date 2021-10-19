@@ -130,6 +130,8 @@ form.addEventListener('submit', async(e) => {
     }else{
         notice.classList.add('hidden')
 
+        let date = new Date();
+
         try {
             const respuesta = await fetch(connection, {
                 method: 'POST',
@@ -138,6 +140,7 @@ form.addEventListener('submit', async(e) => {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
+                    "Date": `${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`,
                     "Name": form.name.value,
                     "Email": form.email.value,
                     "Project": form.project.value,
