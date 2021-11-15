@@ -319,10 +319,12 @@ main{
 .content-block {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .content-block img {
-  margin: 10px 0;
+  margin: 10px 10px;
+  height: 60px;
   /* filter: grayscale(100%); */
   /* transition: all .3s ease; */
 }
@@ -401,7 +403,8 @@ main{
 }
 
 .accordion .block.block--active .content-block{
-  height: 5em;
+  height: 10em;
+  align-items: center;
   /* height: min-content; */
 }
 
