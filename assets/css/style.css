@@ -329,19 +329,20 @@ main{
   /* transition: all .3s ease; */
 }
 
-.content-block img:hover {
+/* .content-block img:hover {
   margin: 10px 0;
-  /* filter: grayscale(0%); */
-}
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+} */
 
-.content-block i {
+/* .content-block i {
   color: var(--primary-color);
   font-size: 4em;
-}
+} */
 
-.content-block i:hover {
+/* .content-block i:hover {
   color: var(--font-color-active);
-}
+} */
 
 .title-block{
   display: flex;
