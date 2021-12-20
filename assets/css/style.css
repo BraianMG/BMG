@@ -564,7 +564,7 @@ main{
 .project-img {
   width: 330px;
   height: 220px;
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
   object-fit: cover;
   object-position: center;
 }
