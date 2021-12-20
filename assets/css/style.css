@@ -489,6 +489,12 @@ main{
   margin-bottom: .5em;
 }
 
+.certificate {
+  color: var(--primary-color);
+  font-size: .8em;
+  font-weight: bold;
+}
+
 .qualification-calendar {
   color: var(--primary-color);
   font-size: .9em;
@@ -558,7 +564,7 @@ main{
 .project-img {
   width: 330px;
   height: 220px;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   object-fit: cover;
   object-position: center;
 }
